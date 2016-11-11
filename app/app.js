@@ -1,11 +1,11 @@
 /**
  * 
  * AngularJS dna
- * @description           Description
- * @author                Jozef Butko // www.jozefbutko.com/resume
- * @url                   www.jozefbutko.com
- * @version               1.1.7
- * @date                  March 2015
+ * @description           DNA Custom Painters Production Websites
+ * @author                Morgan Segura // https://github.com/morgansegura/resume.git
+ * @url                   http://www.dnacustom.com
+ * @version               1.0
+ * @date                  Nov 2016
  * @license               MIT
  * 
  */
@@ -48,8 +48,8 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/setup', {
-        templateUrl: 'views/setup.html',
+      .when('/gallery', {
+        templateUrl: 'views/gallery.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
