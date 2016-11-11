@@ -40,17 +40,32 @@
     var directiveDefinitionObject = {
       restrict: 'AE',
       link: function(scope, element, attrs) {
-
         scope.$watch(function() {
           angular.element(document).ready(function() {
-            $('.grid').masonry({
-                // use outer width of grid-sizer for columnWidth
-                columnWidth: '.grid-sizer',
-                // do not use .grid-sizer in layout
+
+              var $grid = $('.grid').masonry({
                 itemSelector: '.grid-item',
                 percentPosition: true,
                 gutter: 10,
             });
+              $grid.imagesLoaded().progress(function() {
+                  $grid.masonry();
+              })
+              .always( function( instance ) {
+                  console.log('all images loaded');
+              })
+              .done( function( instance ) {
+                  console.log('all images successfully loaded');
+              })
+              .fail( function() {
+                  console.log('all images loaded, at least one is broken');
+              })
+              /*
+               .progress( function( instance, image ) {
+               var result = image.isLoaded ? 'loaded' : 'broken';
+               console.log( 'image is ' + result + ' for ' + image.img.src );
+               });
+               */
           });
         });
       }

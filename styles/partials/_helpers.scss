@@ -26,10 +26,22 @@ Helpers
     clear: both;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+
 .cf {
     *zoom: 1;
 }
