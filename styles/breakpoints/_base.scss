@@ -78,6 +78,7 @@ H1, H2, H3, H4, H5 STYLES
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
+	font-family: $font-headline;
 	font-weight: 500;
 
 	a {
@@ -104,7 +105,9 @@ h4, .h4 {
 	font-size: 0.875rem;
 	font-weight: 700;
 }
+p {
 
+}
 /*********************
 HEADER STYLES
 *********************/
