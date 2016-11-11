@@ -26,7 +26,7 @@
    * 
    */
   angular
-    .module('boilerplate')
+    .module('dna')
     .directive('myslider', slider);
 
   function slider() {

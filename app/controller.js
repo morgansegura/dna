@@ -8,7 +8,7 @@
 ;(function() {
 
   angular
-    .module('boilerplate')
+    .module('dna')
     .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService'];

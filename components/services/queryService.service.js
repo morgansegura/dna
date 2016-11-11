@@ -34,7 +34,7 @@
 
 
   angular
-    .module('boilerplate')
+    .module('dna')
     .factory('QueryService', [
       '$http', '$q', 'CONSTANTS', QueryService
     ]);

@@ -24,7 +24,7 @@
      *
      */
     angular
-      .module('boilerplate')
+      .module('dna')
       .factory('LocalStorage', [
         '$window', '$rootScope', LocalStorageService
       ]);

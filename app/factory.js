@@ -9,7 +9,7 @@
    * 
    */
   angular
-    .module('boilerplate')
+    .module('dna')
     .factory('getDataFromAPI', getDataFromAPI);
 
   getDataFromAPI.$inject = ['$http', 'LocalStorage'];

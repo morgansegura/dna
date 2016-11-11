@@ -12,7 +12,7 @@
    *
    */
   angular
-    .module('boilerplate')
+    .module('dna')
     .directive('mainNav', tinMainNav);
 
   function tinMainNav() {
