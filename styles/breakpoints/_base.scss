@@ -118,7 +118,7 @@ HEADER STYLES
 
 #inner-header {
 	width: 100%;
-	padding: 0 50px;
+	padding: 0 2%;
 	text-align: center;
 
 	a {
@@ -136,6 +136,7 @@ HEADER STYLES
 		display: inline-block;
 		margin-right: 50px;
 		line-height: 50px;
+        margin-top: 15px;
 
 		&:last-child {
 			margin-right: 0;
