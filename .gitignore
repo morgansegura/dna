@@ -1,4 +1,15 @@
 node_modules
+<<<<<<< HEAD
 .idea
 docs
 _build
+=======
+bower_components
+sftp-config.json
+_build
+npm-debug.log
+.idea
+style.css
+style.min.css
+.editorconfig
+>>>>>>> 88595289d5bc8e35a71950179fb419fdb9cce3ed

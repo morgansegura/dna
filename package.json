@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "contactsapp",
   "version": "1.0.0",
   "description": "Create a contacts app in lesson",
@@ -21,11 +22,22 @@
     "angularjs-toaster": "^2.1.0",
     "bootstrap": "^3.3.7",
     "bootstrap-additions": "^0.3.1",
+=======
+  "name": "angularjs-boilerplate",
+  "version": "1.1.7",
+  "license": "MIT",
+  "description": "Simple AngularJS Boilerplate to kick start your new project with SASS support and Gulp watch/build tasks",
+  "main": "app/app.js",
+  "devDependencies": {
+>>>>>>> 88595289d5bc8e35a71950179fb419fdb9cce3ed
     "browser-sync": "^1.9.1",
     "connect": "^3.3.1",
     "connect-livereload": "^0.5.0",
     "del": "^1.1.1",
+<<<<<<< HEAD
     "font-awesome": "^4.7.0",
+=======
+>>>>>>> 88595289d5bc8e35a71950179fb419fdb9cce3ed
     "gulp": "^3.8.10",
     "gulp-angular-templatecache": "^1.6.0",
     "gulp-autoprefixer": "^2.1.0",
@@ -47,14 +59,46 @@
     "gulp-uncss": "^1.0.0",
     "gulp-usemin": "^0.3.11",
     "imagesloaded": "^4.1.1",
+<<<<<<< HEAD
     "ladda": "^1.0.0",
     "ng-infinite-scroll": "^1.3.0",
+=======
+    "masonry-layout": "^4.1.1",
+>>>>>>> 88595289d5bc8e35a71950179fb419fdb9cce3ed
     "opn": "^1.0.0",
     "run-sequence": "^1.0.2",
     "serve-index": "^1.5.0",
     "serve-static": "^1.7.1",
+<<<<<<< HEAD
     "spin": "0.0.1",
     "tiny-lr": "^0.1.4",
     "watch": "^0.13.0"
   }
+=======
+    "tiny-lr": "^0.1.4",
+    "watch": "^0.13.0"
+  },
+  "scripts": {
+    "postinstall": "bower install --no-interactive --allow-root"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbutko/AngularJS-Boilerplate.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "boilerplate",
+    "front-end",
+    "app",
+    "single-page",
+    "spa"
+  ],
+  "author": "Jozef Butko",
+  "docs": "https://github.com/jbutko/AngularJS-Boilerplate/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/jbutko/AngularJS-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/jbutko/AngularJS-Boilerplate"
+>>>>>>> 88595289d5bc8e35a71950179fb419fdb9cce3ed
 }
