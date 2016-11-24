@@ -9,7 +9,9 @@
 
   angular
     .module('dna')
-    .controller('MainController', MainController);
+    .controller('MainController', MainController, $scope);
+
+    $scope.date = new Date();
 
   MainController.$inject = ['LocalStorage', 'QueryService'];
 
