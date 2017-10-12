@@ -23,7 +23,7 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('sass', function() {
-    return gulp.src('app/assets/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+    return gulp.src('app/assets/scss/**/*.scss') // Gets all files ending with .scss in app/assets/scss and children dirs
         .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
         .pipe(gulp.dest('app/assets/css')) // Outputs it in the css folder
         .pipe(browserSync.reload({ // Reloading with Browser Sync
@@ -34,8 +34,8 @@ gulp.task('sass', function() {
 // Watchers
 gulp.task('watch', function() {
     gulp.watch('app/assets/scss/**/*.scss', ['sass']);
-    gulp.watch('app/*.html', browserSync.reload);
-    gulp.watch('app/assets/scripts/**/*.js', browserSync.reload);
+    gulp.watch('app/assets/*.html', browserSync.reload);
+    gulp.watch('app/assets/js/**/*.js', browserSync.reload);
 })
 
 // Optimization Tasks
@@ -44,7 +44,7 @@ gulp.task('watch', function() {
 // Optimizing CSS and JavaScript
 gulp.task('useref', function() {
 
-    return gulp.src('app/*.html')
+    return gulp.src('app/assets/*.html')
         .pipe(useref())
         .pipe(gulpIf('*.js', uglify()))
         .pipe(gulpIf('*.css', cssnano()))
@@ -53,17 +53,17 @@ gulp.task('useref', function() {
 
 // Optimizing Images
 gulp.task('images', function() {
-    return gulp.src('app/assets/img/**/*.+(png|jpg|jpeg|gif|svg)')
+    return gulp.src('app/assets/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
         .pipe(cache(imagemin({
             interlaced: true,
         })))
-        .pipe(gulp.dest('dist/assets/img'))
+        .pipe(gulp.dest('dist/images'))
 });
 
 // Copying fonts
 gulp.task('fonts', function() {
-    return gulp.src('app/fonts/**/*')
+    return gulp.src('app/assets/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
 });
 
@@ -75,7 +75,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('clean:dist', function() {
-    return del.sync(['dist/assets/**/*', '!dist/assets/img', '!dist/assets/img/**/*']);
+    return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
 });
 
 // Build Sequences
